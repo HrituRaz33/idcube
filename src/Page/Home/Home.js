@@ -15,6 +15,7 @@ import theRight from "../../imgs/Which-is-the-right-contactless-biometric-for-yo
 import publicCloud from "../../imgs/Public-Cloud-Security-Challenges-469x263.jpg"
 import MultipleItems from './HomeCarousel ';
 import Responsive from './HomeCarousel ';
+import AutoPlay from './HomeCarousel ';
 
 
 const Home = () => {
@@ -29,7 +30,7 @@ const Home = () => {
                     <p className='text-orange-400 text-4xl mt-4'>Enterprise Physical Security</p>
                     <p className='text-white text-4xl mt-4'>for Unified & Pre-emptive Risk Management</p>
                     <div>
-                        <button className='hover:bg-orange-400 text-whiteborder-solid border-2 border-orange-400 py-2  rounded-3xl px-6 mt-8'>READ MORE</button>
+                        <button className='text-white hover:bg-orange-400 text-whiteborder-solid border-2 border-orange-400 py-2  rounded-3xl px-6 mt-8'>READ MORE</button>
                     </div>
                 </div>
                 <div className='relative top-16 left-32'>
@@ -84,9 +85,9 @@ const Home = () => {
 
             {/* Challenging the Challenges start  */}
             <div className='grid grid-cols-4 w-4/5 mx-auto mt-12'>
-                <div className='hover:bg-orange-400'>
+                <div>
                     <div className='flex flex-col items-center justify-center'>
-                        <div className=''>
+                        <div className='hover:bg-orange-400'>
                             <img className='rounded-full' src={OilGas} alt="" />
                             <div className='absolute'>
                                 <div className='w-2/5 mx-auto relative -top-40 right-40'>
@@ -155,20 +156,20 @@ const Home = () => {
                 </div>
                 <div>
                     <img src={precision} alt="" />
-                    <h1>What is precision access control?</h1>
-                    <p>When it comes to access control, organizations have primarily been focused around the Role-based access control in which the admin</p>
+                    <h1 className='font-bold hover:text-orange-400 mt-4'>What is precision access control?</h1>
+                    <p className='mt-6'>When it comes to access control, organizations have primarily been focused around the Role-based access control in which the admin</p>
                     <button className='btn hover:text-orange-400 mt-4'>Read More</button>
                 </div>
                 <div>
                     <img src={theRight} alt="" />
-                    <h1>Which is the right contactless</h1>
-                    <p>The ongoing COVID pandemic has changed existing business practices globally; the access control industry is also experiencing the impact.</p>
+                    <h1 className='font-bold hover:text-orange-400 mt-4'>Which is the right contactless</h1>
+                    <p className='mt-6'>The ongoing COVID pandemic has changed existing business practices globally; the access control industry is also experiencing the impact.</p>
                     <button className='btn hover:text-orange-400 mt-4'>Read More</button>
                 </div>
                 <div>
                     <img src={publicCloud} alt="" />
-                    <h1>Privacy and Security compliance in Cloud Access Control</h1>
-                    <p>Transitioning from on-premise to adopting Access Control as a Service (ACaaS) over the public cloud brings its own set of doubts</p>
+                    <h1 className='font-bold hover:text-orange-400 mt-4'>Privacy and Security compliance in Cloud Access Control</h1>
+                    <p className='mt-6'>Transitioning from on-premise to adopting Access Control as a Service (ACaaS) over the public cloud brings its own set of doubts</p>
                     <button className='btn hover:text-orange-400 mt-4'>Read More</button>
                 </div>
             </div>
@@ -178,7 +179,7 @@ const Home = () => {
             {/* Our Clients start  */}
 
             <div>
-                <Responsive></Responsive>
+                <AutoPlay></AutoPlay>
             </div>
 
             {/* Our ClientsEnd */}
